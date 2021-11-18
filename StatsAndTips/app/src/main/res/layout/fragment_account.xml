@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.AccountFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="465dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/avatar_man" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="276dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="67dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginBottom="375dp"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:text="Ambrósio"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextViewName"
+            android:layout_width="276dp"
+            android:layout_height="43dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:inputType="textPersonName"
+            android:layout_marginStart="67dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginBottom="370dp"
+            android:drawableLeft="@android:drawable/ic_input_add"
+            android:hint="Edit your name"
+            android:textColorHint="@color/white"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textViewEmail"
+            android:layout_width="276dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginBottom="312dp"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:text=" ambrosio@ua.pt"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextViewEmail"
+            android:layout_width="276dp"
+            android:layout_height="41dp"
+            android:inputType="textEmailAddress"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginBottom="304dp"
+            android:drawableLeft="@android:drawable/ic_dialog_email"
+            android:hint=" Write your new email"
+            android:textColorHint="@color/white"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textFavTeam"
+            android:layout_width="276dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginBottom="244dp"
+            android:drawableLeft="@android:drawable/btn_star_big_on"
+            android:text="Favorite Teams"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="276dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginBottom="200dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textRemFavTeam"
+            android:layout_width="276dp"
+            android:layout_height="31dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginLeft="66dp"
+            android:layout_marginBottom="200dp"
+            android:drawableLeft="@android:drawable/ic_delete"
+            android:text="Remove Team"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <Spinner
+            android:id="@+id/spinnerRem"
+            android:layout_width="276dp"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="98dp"
+            android:layout_marginLeft="98dp"
+            android:layout_marginBottom="156dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextViewFavourite"
+            android:inputType="textPersonName"
+            android:layout_width="276dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="64dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginBottom="239dp"
+            android:drawableLeft="@android:drawable/btn_star_big_on"
+            android:hint="Add a team to your fav"
+            android:textColorHint="@color/white"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnEditInfo"
+            android:layout_width="155dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="124dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginBottom="136dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center"
+            android:text="Edit Info"
+            android:onClick="b1Clicked"
+            android:textColor="#FFFFFF"
+            android:visibility="visible"/>
+
+        <Button
+            android:id="@+id/btnSaveChanges"
+            android:layout_width="155dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginBottom="86dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center"
+            android:text="Save Changes"
+            android:textColor="#FFFFFF"
+            android:onClick="b2Clicked"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnDiscardChanges"
+            android:layout_width="145dp"
+            android:layout_height="47dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="220dp"
+            android:layout_marginLeft="124dp"
+            android:layout_marginBottom="86dp"
+            android:background="@drawable/rounded_corners"
+            android:gravity="center"
+            android:text="Discard"
+            android:textColor="#FFFFFF"
+            android:onClick="b3Clicked"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

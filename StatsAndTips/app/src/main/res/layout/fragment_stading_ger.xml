@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StandingPT">
+
+    <RelativeLayout
+        android:id="@+id/standings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:clickable="true"
+            android:src="@drawable/ic_arrow_back"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="49dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="Bundesliga"
+            android:textAlignment="center"
+            android:textSize="26dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_corners2"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TableRow android:minHeight="100px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="#" />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Team" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="GP" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="Goals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:text="Points" />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:background="@drawable/rounded_corners_champ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="1." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Bayern" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="99:44" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="78" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="2." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="RB Leipzig" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="60:32" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="65" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="3." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Dortmund" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="75:46" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="64" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="4." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Wolfsburg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="61:37" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="61" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="5." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Frankfurt" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="69:53" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="60" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="6." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Leverkusen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="53:39" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="52" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="7." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Union Berlin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="50:43" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="50" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="8." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Mönchengladbach" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="64:56" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="49" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="9." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Stuttgart" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="56:55" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="45" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="10." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Freiburg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="52:52" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="45" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="11." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Hoffenheim" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="52:54" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="43" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="12." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Mainz" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="39:56" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="39" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="13." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Augsburg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="36:54" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="36" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="14." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Hertha" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="41:52" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="35" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="15." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Bielfeld" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="26:52" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="35" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="16." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="FC Koln" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="34:60" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="33" />
+
+                </TableRow>
+
+                <TableRow
+
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:background="@drawable/rounded_corners_relegated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="17." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Bremen" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="36:57" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="31" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:background="@drawable/rounded_corners_relegated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="18." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Schalke" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="34" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="25:86" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="16" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/rounded_corners_champ"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Equipa que está zona de campeão"
+                        ></TextView>
+                </TableRow>
+
+                <TableRow
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/rounded_corners_relegated"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Equipas que estão na zona de despromoção"
+                        ></TextView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Se as equipas terminarem em igualdade pontual no final da temporada, o desempate é feito tendo em conta o resultado direto entre as equipas empatadas"
+                        ></TextView>
+                </TableRow>
+
+
+            </TableLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

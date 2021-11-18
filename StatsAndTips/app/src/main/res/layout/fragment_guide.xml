@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.GuideFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <!--TITLE-->
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Guide for Beginners\n"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+            <!--BOOKMAKERS-->
+                <TextView
+                    android:id="@+id/textViewItem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Online Bookmakers"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:onClick="onClick1" />
+
+                <TextView
+                    android:id="@+id/textViewSubItem1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="The easiest way to place a bet these days is to use a betting site or online bookmaker. Ever since the first sites started online at the end of the 20th century, Internet sports betting has become incredibly popular. There are now hundreds of bookmakers on the web used by millions of people around the world.\nThese online bookmakers are incredibly easy to use. Once you have opened an account and have deposited some funds, you can place any bet you want with just a few clicks. Most betting sites cover a huge range of sports and events, and some are very competitive in terms of the odds and lines they offer. They even offer bonuses and rewards just for depositing and betting with them."
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+            <!--ODDS-->
+                <TextView
+                    android:id="@+id/textViewItem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick2"
+                    android:text="\nUnderstanding Odds"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/odds1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="In sports betting terms, odds basically serve two purposes. First, they are used to calculate the payouts of winning wagers. Every time you place a bet with a bookmaker, you’ll be offered odds at the time, which impact how much you can win. The higher they are, the more you stand to win relative to your stake.\nSecond, odds also reflect the likelihood of any particular outcome happening. The more likely an outcome, the lower they will be. This makes perfect sense, as you would expect to win less when betting on an outcome that’s likely than when betting on an outcome that is unlikely."
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/textViewItem2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick2_1"
+                    android:text="\nOdd example"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+
+                <TextView
+                    android:id="@+id/odds2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="0px"
+                    android:text="The number shows how much the total payout will be, including the original stake per unit staked. For example, a winning bet at 1.5 would return a total of $1.50 for every $1 staked. A winning bet at 2.25 would return a total of $2.25 for every $1 staked. An even money bet is expressed as 2.00."
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/howoddswork"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:foregroundGravity="center"
+                    android:layout_gravity="center"
+                    android:scaleType="fitStart"
+                    android:src="@drawable/howoddswork"
+                    tools:visibility="gone" />
+
+                <!--TIPS-->
+                <TextView
+                    android:id="@+id/textViewItem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:onClick="onClick3"
+                    android:paddingTop="0px"
+                    android:text="\nTips for Beginners"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textViewSubItem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="\t1. Start Slowly\n\t2. Learn the Basics\n\t3. Have Realistic Expectations\n\t4. Bet with a Clear Mind\n\t5. Develop a Bankroll Management Plan\n\t6. Bet on Sports That You Know Well\n\t7. Remain Disciplined\n\t8. Keep Records\n\t9. Find a Trusted Betting Site\n\t10. Don’t Pay for Picks\n"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</FrameLayout>

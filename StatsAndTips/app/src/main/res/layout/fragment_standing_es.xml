@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StandingPT">
+
+    <RelativeLayout
+        android:id="@+id/standings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:clickable="true"
+            android:src="@drawable/ic_arrow_back"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="49dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="La Liga"
+            android:textAlignment="center"
+            android:textSize="26dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/rounded_corners2"
+            android:fillViewport="true">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp">
+
+                <TableRow android:minHeight="100px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="#" />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Team" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="GP" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="Goals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="5dp"
+                        android:text="Points" />
+
+                </TableRow>
+
+                <TableRow
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:background="@drawable/rounded_corners_champ"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="1." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Atlético de Madrid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="67:25" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="86" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="2." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Real Madrid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="67:28" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="84" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="3." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Barcelona" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="85:38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="79" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="4." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Sevilla" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="53:33" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="77" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="5." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Real Sociedad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="59:38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="62" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="6." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Betis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="50:50" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="61" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="7." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Villareal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="60:44" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="58" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="8." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Celta Vigo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="55:57" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="53" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="9." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Granada" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="47:65" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="46" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="10." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Athletic Bilbau" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="46:42" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="46" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="11." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Osasuna" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="37:48" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="44" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="12." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Cadiz" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="36:58" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="44" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="13." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Valencia" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="50:53" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="43" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="14." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Levante" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="46:57" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="41" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="15." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Getafe" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="28:43" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="38" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="16." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Alaves" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="36:57" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="38" />
+
+                </TableRow>
+
+                <TableRow android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="17." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Elche" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="34:55" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="36" />
+
+                </TableRow>
+
+                <TableRow
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:background="@drawable/rounded_corners_relegated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="18." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Huesca" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="34:53" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="34" />
+
+                </TableRow>
+
+                <TableRow
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:background="@drawable/rounded_corners_relegated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="19." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Valladolid" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="34:57" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="31" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:background="@drawable/rounded_corners_relegated"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="3dp"
+                        android:text="20." />
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:text="Eibar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="38" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="10dp"
+                        android:text="29:52" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:paddingLeft="17dp"
+                        android:text="30" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/rounded_corners_champ"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Equipa que está zona de campeão"
+                        ></TextView>
+                </TableRow>
+
+                <TableRow
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/rounded_corners_relegated"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Equipas que estão na zona de despromoção"
+                        ></TextView>
+                </TableRow>
+
+                <TableRow
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:minHeight="80px">
+
+                    <TextView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        ></TextView>
+
+                    <TextView
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:text="Se as equipas terminarem em igualdade pontual no final da temporada, o desempate é feito tendo em conta o resultado direto entre as equipas empatadas"
+                        ></TextView>
+                </TableRow>
+
+
+            </TableLayout>
+
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>

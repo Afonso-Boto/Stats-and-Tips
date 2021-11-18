@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FantasyLeague">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient">
+
+        <TextView
+            android:id="@+id/teams_players"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="131dp"
+            android:layout_marginLeft="131dp"
+            android:layout_marginTop="286dp"
+            android:layout_marginEnd="136dp"
+            android:layout_marginRight="136dp"
+            android:layout_marginBottom="458dp"
+            android:gravity="center"
+            android:text="Teams"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/goBack"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:clickable="true"
+            android:src="@drawable/ic_arrow_back"></ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="49dp"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            android:text="Fantasy League"
+            android:textAlignment="center"
+            android:textSize="26dp" />
+
+        <EditText
+            android:id="@+id/searchEditText"
+            android:layout_width="358dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="589dp"
+            android:background="@color/white"
+            android:text=""
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView21"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="241dp"
+            android:layout_marginLeft="241dp"
+            android:layout_marginTop="179dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="70dp"
+            android:text="Search" />
+
+        <Button
+            android:id="@+id/btnAddClube"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/teams_players"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="179dp"
+            android:layout_marginEnd="242dp"
+            android:layout_marginRight="242dp"
+            android:layout_marginBottom="70dp"
+            android:text="Add Club" />
+
+        <ListView
+            android:id="@+id/listViewClubes"
+            android:layout_width="match_parent"
+            android:layout_height="398dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="333dp"
+            android:layout_marginBottom="0dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

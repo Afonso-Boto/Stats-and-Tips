@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homepage"
+        android:title="Home"
+        android:icon="@drawable/ic_homepage_foreground"/>
+    <item
+        android:id="@+id/guide"
+        android:title="Guide"
+        android:icon="@drawable/ic_guide_foreground"/>
+    <item
+        android:id="@+id/account"
+        android:title="Account"
+        android:icon="@drawable/ic_person_foreground"/>
+</menu>
